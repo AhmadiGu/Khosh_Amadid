@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1122;
+  color: #e7ebf7;
+  line-height: 1.6;
+}
+
+a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #e7ebf7;
+}
+/* Navbar and Logo*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b1122;
+  border-bottom: 1px solid #252f50;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0.6rem;
+}
+
+a.site-logo-name {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+a.site-logo-name img {
+  min-width: 2.6rem;
+  min-height: 2.6rem;
+  margin-right: 0.25rem;
+}
+
+nav ul {
+  display: none;
+}
+
+nav button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background-color: #0b1122;
+  cursor: pointer;
+}
+
+nav button svg {
+  width: 28px;
+  height: 28px;
+  fill: #e7ebf7;
+}
+@media (min-width: 50em) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+  nav ul li a:hover {
+    color: #8fa8ff;
+    padding-bottom: 0.25rem;
+    border-bottom: 1.6px solid #f0b73a;
+  }
+}
+
+/* Main
+--------------------------------------------- */
+/* Page Header */
