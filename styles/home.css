@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: 'Reem Kufi', 'Segoe UI', system-ui, sans-serif;
   background-color: #0b1122;
   color: #e7ebf7;
   line-height: 1.6;
 }
 
 a {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
+  font-family: 'Reem Kufi', 'Segoe UI', system-ui, sans-serif;
   text-decoration: none;
   color: #e7ebf7;
 }
@@ -19,24 +19,26 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #0b1122;
-  border-bottom: 1px solid #252f50;
-  position: sticky;
+  border-bottom: 1px solid #3c4667;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
   padding: 1rem 0.6rem;
+  height: 5rem;
 }
-
 a.site-logo-name {
   font-size: 1.25rem;
   display: flex;
   align-items: center;
   white-space: nowrap;
+  background-color: #0b1122;
 }
 
 a.site-logo-name img {
   min-width: 2.6rem;
   min-height: 2.6rem;
-  margin-right: 0.25rem;
+  margin-right: 0.55rem;
 }
 
 nav ul {
@@ -58,6 +60,7 @@ nav button svg {
 @media (min-width: 50em) {
   header {
     padding: 1rem 2rem;
+    height: 5.2rem;
   }
 
   nav button {
@@ -68,20 +71,269 @@ nav button svg {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin: 0;
+    margin: 3rem;
     padding: 0;
   }
 
   nav ul li {
     margin: 0 1rem;
   }
+
+  nav ul li a {
+    font-size: clamp(1.04rem, 1vw, 1.5rem);
+  }
   nav ul li a:hover {
     color: #8fa8ff;
     padding-bottom: 0.25rem;
     border-bottom: 1.6px solid #f0b73a;
   }
+  a.site-logo-name {
+  font-size: 1.49rem;
+  margin-left: 1.5rem;
+}
+
+a.site-logo-name img {
+  min-width: 3rem;
+  min-height: 3rem;
+
+}
 }
 
 /* Main
 --------------------------------------------- */
-/* Page Header */
+/* Bannar Part */
+.banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-section  .banner-content {
+  position: absolute;
+  z-index: 100;
+  margin: 0 auto;
+  top: 6.5%;
+  height: clamp(65rem, 30vw, 30rem);
+  padding: 2.5rem 1.25rem;
+  background-color: rgba(11, 17, 34, 0.4);
+  width: 100%;
+}
+
+.banner-section video {
+  display: block;
+  width: 100%;
+  height: clamp(65rem, 30vw, 30rem);
+  object-fit: cover;
+  object-position: 75% center;
+}
+
+@media (min-width: 30em) {
+   .banner-section  .banner-content {
+   height: 48rem;
+  padding: 4.5rem 2.25rem;
+ 
+}
+
+.banner-section  video {
+   height: 48rem;
+ 
+}
+
+}
+
+.welcome-message{
+ color: #F0B73A;
+ font-size: clamp(0.8rem, 1vw, 1.2rem);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+}
+
+h1{
+  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  font-weight: 700;
+  max-width: 30rem;
+  margin: 0;
+}
+
+.country-name {
+  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  padding: 0;
+  margin: 0;
+ color: #F0B73A;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.country-description {
+  font-size: clamp(0.89rem, 1.25vw, 1.45rem);
+    letter-spacing: 0.06em;
+    padding: 0 0  1.5rem 0.5rem;
+   max-width: 40rem;
+   font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
+
+.banner-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  position: relative;      
+  padding-top: 1.25rem;
+  border-top: 1.2px solid rgba(255, 255, 255, 0.22);
+}
+
+.banner-section li{
+  flex: 1 1 12.5rem;
+}
+
+ p.major-info {
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  color: #8fa8ff;
+  margin: 0;
+  text-transform: uppercase;
+  
+}
+
+ p.value {
+  font-size: clamp(1.15rem, 1.5vw, 1.95rem);
+  font-weight: 600;
+  margin-top: 4px;
+ 
+}
+/*--------------------------------------------- */
+/* Explore Part */
+
+.explore-section {
+  padding: 2.14rem 1.25rem;
+}
+@media (min-width: 50em) {
+  .explore-section {
+  padding-left:  4.25rem;
+  padding-right: 4.25rem;
+}
+
+.explore-title-1 {
+  color:#9FA9C7;
+  text-transform: uppercase;
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+  letter-spacing: 0.06em;
+}
+
+.explore-title-2 {
+  font-size: clamp(1.85rem, 2vw, 2.95rem);
+
+}
+
+}
+.explore-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr) );
+  gap: 1.25rem;
+  margin-top: 1.88rem;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  background-color: #131B35;
+  border: 1px solid #252F50;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  text-decoration: none;
+
+}
+.cards:hover{
+  border: 1px solid #8fa8ff;
+
+}
+.card-title{
+  font-size: clamp(0.85rem, 1.3vw, 1.5rem);
+  margin: 0;
+}
+.card-title-explore{
+  color: rgb(143, 168, 255);
+}
+.card-title-before-you-go{
+  color: rgb(181, 210, 111);
+}
+.card-title-the-year{
+  color: rgb(255, 142, 160);
+}
+
+.cards-text{
+  color: #9FA9C7;
+  font-size: clamp(0.98rem, 1vw, 1.25rem);
+margin: 0;
+font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
+
+.cards-link{
+  color: #8FA8FF;
+  margin-top: auto;
+  font-size: clamp(0.78rem, 1vw, 1.25rem);
+  text-transform: uppercase;
+}
+
+
+.stay-update {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131B35;
+  border-radius: 1.5rem;
+  padding: 2.25rem 1.25rem; 
+  width: 55%;
+  margin: 4.5rem auto;
+  box-shadow: 0 0 10px rgba(248, 244, 244, 0.922);
+}
+
+.stay-update form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.stay-update input{
+  padding: 0.78rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-bottom: 1.89rem;
+  font-size: clamp(1.05rem, 1vw, 1.25rem);
+}
+
+.stay-update button{
+  padding: 1.05rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: clamp(0.85rem, 1.4vw, 1.25rem);
+  background-color: #F0B73A;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.stay-update button:hover{
+  
+  color: #F0B73A;
+  background-color: #ffffff92;
+}
+
+/*--------------------------------------------- */
+/* Footer Part */
+
+footer {
+  text-align: center;
+  background-color: #0b1122;
+  border-top: 1px solid #3c4667;
+  width: 100%;
+  padding: 1rem 0.6rem;
+  height: 5rem;
+  font-size: clamp(1.15rem, 1vw, 1.15rem);
+  margin-top: 2.5rem;
+}

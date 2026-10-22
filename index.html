@@ -14,7 +14,7 @@
         class="site-logo-name"><img src="./images/logo-country-site.svg" alt="Logo" />
         Khosh Amadid</a
       >
-      <nav>
+      <nav class="nav">
         <button class="menu-toggle">
 					<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
 						<title>Menu Icon</title>
@@ -30,41 +30,90 @@
       </nav>
     </header>
     <main>
-      <div>
-        <p>Khosh Amadid . Welcome</p>
-        <h1>Explore Afghanistan</h1>
-        <h2>افغانستان</h2>
-        <p>
-          Afghanistan sits where Central and South Asia meet, in the folds of
-          the Hindu Kush. Its cities were stops on the Silk Road for thousands
-          of years, and its valleys hold blue lakes, tiled mosques, orchards and
-          a tall brick minaret. Start with a place, a dish or a custom, then see
-          what the year looks like.
-        </p>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <p class="major-info">Provinces</p>
-            <p class="value">34</p>
-          </li>
-          <li>
-            <p class="major-info">Offical Languages</p>
-            <p class="value">Dari and Pashto</p>
-          </li>
-          <li>
-            <p class="major-info">Capital</p>
-            <p class="value">Kabul</p>
-          </li>
-          <li>
-            <p class="major-info">Currency</p>
-            <p class="value">Afghani (AFN)</p>
-          </li>
-        </ul>
-      </div>
+      <section class="banner-section">
+        <video autoplay muted loop playsinline>
+          <source src="./images/banner-exact.mp4" type="video/mp4" />
+        </video>
+        <section class="banner-content">
+            <p class="welcome-message">Khosh Amadid &nbsp; &nbsp;  . &nbsp; &nbsp;Welcome</p>
+            <h1>Explore Afghanistan</h1>
+            <h2 lang="fa" dir="rtl" class="country-name">افغانستان</h2>
+            <p class="country-description">
+            Afghanistan sits where Central and South Asia meet, in the folds of
+            the Hindu Kush. Its cities were stops on the Silk Road for thousands
+            of years, and its valleys hold blue lakes, tiled mosques, orchards and
+            a tall brick minaret. Start with a place, a dish or a custom, then see
+            what the year looks like.
+            </p>
+      
+            <ul>
+            <li>
+                <p class="major-info">Provinces</p>
+                <p class="value">34</p>
+            </li>
+            <li>
+                <p class="major-info">Offical Languages</p>
+                <p class="value">Dari and Pashto</p>
+            </li>
+            <li>
+                <p class="major-info">Capital</p>
+                <p class="value">Kabul</p>
+            </li>
+            <li>
+                <p class="major-info">Currency</p>
+                <p class="value">Afghani (AFN)</p>
+            </li>
+            </ul>
+        </section>
+      </section>
+      <section class="explore-section">
+        <p class="explore-title-1">Where &nbsp;  To &nbsp; Next</p>
+        <h2 class="explore-title-2">Three ways in</h2>
+        <section class="explore-cards">
+          <a href="#" class="cards">
+            <p class="card-title card-title-explore">Explore</p>
+             <h3>Places, Food, and Culture</h3>
+             <p class="cards-text">
+              Twelve short introductions, from the lakes of Band-e-Amir to a plate of Kabuli pulao.
+             </p>
+             <span  class="cards-link">Open the card -></span>
+          </a>
+          <a href="#" class="cards">
+            <p class="card-title card-title-before-you-go">Before You Go</p>
+             <h3>Advice, manners and words</h3>
+             <p class="cards-text">
+              Travel guidance to check, customs to know, and four phrases to carry.
+             </p>
+             <span  class="cards-link">Plan with care -></span>
+          </a>
+          <a href="#" class="cards">
+            <p class="card-title card-title-the-year">The Year</p>
+             <h3>The Afghan solar calendar</h3>
+             <p class="cards-text">
+              Twelve months, four seasons, and what happens in each. Today's date is highlighted.
+             </p>
+             <span  class="cards-link"> See the year-></span>
+          </a>
+          
+
+        </section>
+        
+      </section>
+      <section class="stay-update">
+        <h2>STAY UP TO DATE</h2>
+        <form action="#" method="post">
+           <label for="name">Name :</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required />
+          <label for="email">Email :</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+  
     </main>
     <footer>
-      <p>&copy; 2023 My Website. All rights reserved.</p>
+      <p >&copy; 2026 Khosh Amadid. This site is for educational purposes only.</p>
     </footer>
   </body>
 </html>
