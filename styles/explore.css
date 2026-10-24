@@ -1,0 +1,137 @@
+/* Main
+--------------------------------------------- */
+/* Banner Part */
+
+.banner-section-explore {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner-section-explore img {
+  display: block;
+  width: 100%;
+  height: clamp(25rem, 30vw, 30rem);
+  object-fit: cover;
+  
+}
+
+.banner-section-explore blockquote {
+  position: absolute;
+  z-index: 100;
+  margin: 0 auto;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  top: 17rem;
+  height: 7.5rem;
+  padding: 0rem 0.75rem;
+  background-color: rgba(11, 17, 34, 0.756);
+  width: fit-content;
+  border-radius: 0 2.5rem 0.5rem  2.5rem;
+  border-left: 0.5rem solid #f0b73a;
+}
+
+blockquote p {
+  font-size: clamp(1rem, 1.6vw, 1.9rem);
+  letter-spacing: 0.04em;
+  margin: 0.5rem 0;
+}
+
+
+@media (min-width: 38em) {
+    .banner-section-explore blockquote {
+        width: 65%;
+        top: 17rem;
+        padding: 0.5rem 0.75rem 4.75rem 0.75rem;
+    }
+}
+
+/*--------------------------------------------- */
+/* Explore Intro Part */
+.explore-intro {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  
+}
+
+@media (min-width: 38em) {
+    .explore-intro {
+        padding: 2rem 4rem;
+    }
+}
+
+.explore-intro h2 {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.explore-intro p {
+  font-size: clamp(1.2rem, 1.25vw, 1.45rem);
+  margin-bottom: 1.5rem;
+  color: #9fa9c7;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+@media (min-width: 38em) {
+    .explore-intro p {
+     width: 55%;
+    }
+}
+
+ul.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+button.filter-btn {
+  background-color: transparent;
+  color: #e7ebf7;
+  border: 1px solid #8fa8ff;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+button.filter-btn:hover {
+  border: 1px solid #f3f3f7;
+}
+
+.active {
+  background-color: #fff;
+  color: #0b1122;
+}
+
+/*--------------------------------------------- */
+/* Explore cards Part */
+
+div.explore-cards {
+ padding: 0 1.25rem ;
+}
+
+.cards div{
+    padding: 1.25rem;
+    height: 100%;
+
+}
+
+.cards div h2{
+    font-size: clamp(1.17rem, 2vw, 2.5rem);
+}
+
+
+.cards-meta {
+    font-size: clamp(0.89rem, 1vw, 1.25rem);
+    border-top: 1px solid #3c4667;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    
+}
+

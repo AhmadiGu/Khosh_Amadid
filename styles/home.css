@@ -119,46 +119,9 @@ p.value {
     font-size: clamp(1.85rem, 2vw, 2.95rem);
   }
 }
-.explore-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.25rem;
-  margin-top: 1.88rem;
+a.cards {
+  padding: 1.25rem; 
 }
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  background-color: #131b35;
-  border: 1px solid #252f50;
-  border-radius: 0.25rem;
-  padding: 1.25rem;
-  text-decoration: none;
-}
-.cards:hover {
-  border: 1px solid #8fa8ff;
-}
-.card-title {
-  font-size: clamp(1rem, 1.3vw, 1.5rem);
-  margin: 0;
-}
-.card-title-explore {
-  color: rgb(143, 168, 255);
-}
-.card-title-before-you-go {
-  color: rgb(181, 210, 111);
-}
-.card-title-the-year {
-  color: rgb(255, 142, 160);
-}
-
-.cards-text {
-  color: #9fa9c7;
-  font-size: clamp(0.98rem, 1vw, 1.25rem);
-  margin: 0;
-  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-}
-
 .cards-link {
   color: #8fa8ff;
   margin-top: auto;
