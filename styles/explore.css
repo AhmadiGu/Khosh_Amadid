@@ -14,7 +14,6 @@
   width: 100%;
   height: clamp(25rem, 30vw, 30rem);
   object-fit: cover;
-  
 }
 
 .banner-section-explore blockquote {
@@ -29,7 +28,7 @@
   padding: 0rem 0.75rem;
   background-color: rgba(11, 17, 34, 0.756);
   width: fit-content;
-  border-radius: 0 2.5rem 0.5rem  2.5rem;
+  border-radius: 0 2.5rem 0.5rem 2.5rem;
   border-left: 0.5rem solid #f0b73a;
 }
 
@@ -39,13 +38,12 @@ blockquote p {
   margin: 0.5rem 0;
 }
 
-
 @media (min-width: 38em) {
-    .banner-section-explore blockquote {
-        width: 65%;
-        top: 17rem;
-        padding: 0.5rem 0.75rem 4.75rem 0.75rem;
-    }
+  .banner-section-explore blockquote {
+    width: 65%;
+    top: 17rem;
+    padding: 0.5rem 0.75rem 4.75rem 0.75rem;
+  }
 }
 
 /*--------------------------------------------- */
@@ -54,13 +52,12 @@ blockquote p {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  
 }
 
 @media (min-width: 38em) {
-    .explore-intro {
-        padding: 2rem 4rem;
-    }
+  .explore-intro {
+    padding: 2rem 4rem;
+  }
 }
 
 .explore-intro h2 {
@@ -76,9 +73,9 @@ blockquote p {
 }
 
 @media (min-width: 38em) {
-    .explore-intro p {
-     width: 55%;
-    }
+  .explore-intro p {
+    width: 55%;
+  }
 }
 
 ul.filter-list {
@@ -112,26 +109,22 @@ button.filter-btn:hover {
 /* Explore cards Part */
 
 div.explore-cards {
- padding: 0 1.25rem ;
+  padding: 0 1.25rem;
 }
 
-.cards div{
-    padding: 1.25rem;
-    height: 100%;
-
+.cards div {
+  padding: 1.25rem;
+  height: 100%;
 }
 
-.cards div h2{
-    font-size: clamp(1.17rem, 2vw, 2.5rem);
+.cards div h2 {
+  font-size: clamp(1.17rem, 2vw, 2.5rem);
 }
-
 
 .cards-meta {
-    font-size: clamp(0.89rem, 1vw, 1.25rem);
-    border-top: 1px solid #3c4667;
-    text-transform: uppercase;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-    
+  font-size: clamp(0.89rem, 1vw, 1.25rem);
+  border-top: 1px solid #3c4667;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
-
