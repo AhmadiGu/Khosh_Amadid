@@ -82,8 +82,8 @@ button.filter-btn:hover {
 }
 
 .active {
-  background-color: #fff;
-  color: #0b1122;
+  background-color: #f3f3f7 !important;
+  color: #0b1122 !important;
 }
 
 /*--------------------------------------------- */
