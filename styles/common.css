@@ -125,6 +125,22 @@ nav button svg {
     min-height: 3rem;
   }
 }
+.banner-content {
+  position: absolute;
+  z-index: 100;
+  margin: 0 auto;
+  top: 6.5%;
+  padding: 3.5rem 1.25rem;
+  background-color: rgba(11, 17, 34, 0.253);
+  width: 100%;
+}
+
+.welcome-message {
+  color: #f0b73a;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 
 /*--------------------------------------------- */
 /* explore cards used in home and explore page cards */
@@ -166,6 +182,37 @@ nav button svg {
   font-size: clamp(0.98rem, 1vw, 1.25rem);
   margin: 0;
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+/* Explore Intro Part  used in explore page and before-go page */
+.explore-intro {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 38em) {
+  .explore-intro {
+    padding: 2rem 4rem;
+  }
+}
+
+.explore-intro h2 {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.explore-intro p {
+  font-size: clamp(1.2rem, 1.25vw, 1.45rem);
+  margin-bottom: 1.5rem;
+  color: #9fa9c7;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+@media (min-width: 48em) {
+  .explore-intro p {
+    width: 65%;
+  }
 }
 
 /*--------------------------------------------- */
