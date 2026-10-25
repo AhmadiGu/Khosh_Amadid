@@ -21,18 +21,27 @@
 
 .banner-content h1 {
   font-size: clamp(2.3rem, 3.5vw, 3.4rem);
-  max-width: 30rem;
   margin: 0;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 24.0625em) {
   .banner-section .banner-content {
-    height: 48rem;
+    height: 53rem; 
+  }
+
+  .banner-section video {
+    height: 53rem;
+  }
+}
+
+@media (min-width: 48.185em) {
+  .banner-section .banner-content {
+    height: 40rem;
     padding: 4.5rem 2.25rem;
   }
 
   .banner-section video {
-    height: 48rem;
+    height: 40rem;
   }
 
   .banner-content h1 {
@@ -40,15 +49,24 @@
     font-weight: 700;
   }
 }
+.country-name-container {
+  width:clamp(20rem, 60vw, 60rem);
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  padding: 0;
+}
 
 .country-name {
-  font-size: clamp(2.3rem, 5vw, 3.4rem);
+  font-size: clamp(3.03rem, 5vw, 4.04rem);
   padding: 0;
   margin: 0;
   color: #f0b73a;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  align-self: flex-end;
 }
+
 
 .country-description {
   font-size: clamp(1rem, 1.25vw, 1.45rem);
@@ -61,7 +79,7 @@
 .banner-section ul {
   list-style: none;
   padding: 0;
-  margin: 3rem 0;
+  margin: 1.3rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;

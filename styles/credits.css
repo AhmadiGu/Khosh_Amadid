@@ -1,18 +1,17 @@
 section {
-    background-color: #e4e6ec;
-    margin: 7rem 1.2rem  2rem 1.2rem;
-    color: #0b1122;
-    border-radius: 0 2.5rem 0.5rem 2.5rem;
-    border-left: 0.5rem solid #f0b73a;
-    height: 100%;
-    padding: 1.25rem 1.5rem;
+  background-color: #e4e6ec;
+  margin: 7rem 1.2rem 2rem 1.2rem;
+  color: #0b1122;
+  border-radius: 0 2.5rem 0.5rem 2.5rem;
+  border-left: 0.5rem solid #f0b73a;
+  height: 100%;
+  padding: 1.25rem 1.5rem;
 }
 
 table {
-    margin: 1.5rem auto;
-    text-align: center;
-    box-shadow: 0 0.5rem 1rem rgba(230, 136, 6, 0.253);
-
+  margin: 1.5rem auto;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(230, 136, 6, 0.253);
 }
 
 .credits,
@@ -25,7 +24,7 @@ table {
 }
 
 .credits thead {
-  display: none;            /* hides the Type / Source row on small screens */
+  display: none;
 }
 
 td {
@@ -45,12 +44,25 @@ td.type {
 }
 
 @media (min-width: 40em) {
-   .credits       { display: table; width: 100%; border-collapse: collapse; }
-  .credits thead { display: table-header-group; }
-  .credits tbody { display: table-row-group; }
-  .credits tr    { display: table-row; }
+  .credits {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .credits thead {
+    display: table-header-group;
+  }
+  .credits tbody {
+    display: table-row-group;
+  }
+  .credits tr {
+    display: table-row;
+  }
   .credits th,
-  .credits td    { display: table-cell; width: auto; }
+  .credits td {
+    display: table-cell;
+    width: auto;
+  }
 
   .credits th {
     padding: 0.65rem 1.25rem;
@@ -65,7 +77,7 @@ td.type {
 
   td.type {
     font-weight: 700;
-    vertical-align: middle; 
+    vertical-align: middle;
     border-right: 0.15rem solid #f0b73a;
   }
 }

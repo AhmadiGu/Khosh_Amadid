@@ -231,7 +231,6 @@ footer {
   flex-direction: column;
   color: #9fa9c7;
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-
 }
 
 @media (min-width: 50em) {
@@ -241,4 +240,8 @@ footer {
     flex-direction: row;
     padding: 0.71rem 4.9rem;
   }
+}
+
+.dari {
+  font-family: "Amiri", "Noto Naskh Arabic", "Traditional Arabic", serif;
 }
