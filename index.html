@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./styles/normalize-fwd.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./styles/common.css" />
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body>
     <a class="screen-reader-text" href="#main">Skip to content</a>
@@ -28,20 +29,15 @@
         ><img src="./images/logo-country-site.svg" alt="Logo" /> Khosh Amadid</a
       >
       <nav class="nav">
-        <button class="menu-toggle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="36"
-            height="36"
-            viewBox="0 0 24 24"
-          >
-            <title>Menu Icon</title>
-            <path
-              d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-            ></path>
-          </svg>
-        </button>
-        <ul>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+  <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+  </svg>
+  <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+    <path d="M23 3.5 20.5 1 12 9.5 3.5 1 1 3.5 9.5 12 1 20.5 3.5 23 12 14.5 20.5 23 23 20.5 14.5 12z"></path>
+  </svg>
+</button>
+        <ul id="nav-menu" class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="before-go.html">Before You Go</a></li>

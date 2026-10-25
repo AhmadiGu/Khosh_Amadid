@@ -32,7 +32,7 @@ a {
 }
 
 a:visited {
-  color: #8fa8ff;
+  color: #e7ebf7b0;
 }
 
 a:hover,
@@ -125,6 +125,51 @@ nav button svg {
     min-height: 3rem;
   }
 }
+
+/* Navbar toggle class */
+.nav-menu.show {
+  display: block;
+  position: absolute;
+  top: 100%;               
+  left: 0;
+  right: 0;
+  z-index: 50;
+  margin: 0;
+  padding: 0.5rem 0 1rem;
+  list-style: none;
+  background-color: #0b1122;
+  border-top: 0.2rem solid #f0b73a;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+}
+
+.nav-menu.show a {
+  display: block;
+  position: relative;
+  padding: 1rem 1.5rem 1rem 3rem;
+  color: #e7ebf7;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+
+.nav-menu.show a:hover,
+.nav-menu.show a:focus-visible {
+  background-color: #16204a;
+  color: #f0b73a;
+}
+
+.menu-toggle .icon-close { 
+  display: none; 
+}          
+.menu-toggle.open .icon-menu  {
+   display: none; 
+  }     
+.menu-toggle.open .icon-close { 
+  display: inline; 
+}   
+
+/* Banner Part common classes */
 .banner-content {
   position: absolute;
   z-index: 100;
